@@ -47,7 +47,6 @@ class _HomePageState extends State<HomePage> {
               ),
               Expanded(
                 child: ListView.builder(
-               
                   // scrollDirection: Axis.horizontal,
                   itemCount: data.length,
                   // separatorBuilder: (context, index) {
@@ -80,7 +79,6 @@ class _HomePageState extends State<HomePage> {
                             title: Text(
                               data[index],
                               style: TextStyle(color: Colors.black),
-                              te
                             ),
                             subtitle: Text('Days')));
 

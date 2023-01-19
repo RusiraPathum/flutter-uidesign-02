@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:uidesign01/home.dart';
+import 'package:uidesign01/home_page.dart';
+// import 'package:uidesign01/home.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -107,11 +108,7 @@ class _LoginPageState extends State<LoginPage> {
         _passwordController.text == '123456') {
       print('Login success');
       Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => HomePage(
-                    userName: _usernameController.text,
-                  )));
+          context, MaterialPageRoute(builder: (context) => HomePages()));
     } else {
       print('Login fail');
       showAlertDialog(context);
